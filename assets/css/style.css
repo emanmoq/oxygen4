@@ -364,12 +364,6 @@ bottom:-100px;
 
 }
 
-.MemberImg{
-    height:60%;
-}
-.MemberImg img{
-height:100%;
-}
 .memberInfo h3{
     margin-top:30px;
     font-size:18px;
@@ -767,6 +761,14 @@ textarea{
 }
   /*********************************************************/
   /************** Responsive  *****************************/
+  @media(min-width:1200px){
+    .MemberImg{
+        height:60%;
+    }
+    .MemberImg img{
+    height:90%;
+    }
+  }
   @media (min-width: 768px) and (max-width: 991px) {
     .navbar-right li a {
        font-size: 12px;
