@@ -767,34 +767,231 @@ textarea{
 }
   /*********************************************************/
   /************** Responsive  *****************************/
-  @media (max-width: 767px) {
-
-	body {
-		font-size: 14px;
-	}
-
-	#hero-slider .caption {
-		font-size: 15px;
-		padding: 0 30px;
-	}
-	.left-arrow, .right-arrow {
-		font-size: 20px;
-		height: 30px;
-		line-height: 25px;
-		width: 30px;
-	}
-	#home-slider:hover .right-arrow {
-		right: 15px;
-	}
-	#home-slider:hover .left-arrow {
-		left: 15px;
-	}
-	.caption .start-btn {
-		font-size: 12px;
-		padding: 10px 30px;
-    }
-    #hero-slider .caption h1 {
-		font-size: 40px;
-    }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .navbar-right li a {
+       font-size: 12px;
+       padding-right: 10px;
+   }
+   .MemberIcons ul li {
+       margin-bottom: 10px;
+   }
+   .num {
+       font-size: 16px;
+       line-height: 30px;
+       width: 100%;
+   }
+   .num span {
+       font-size: 10px;
+       margin-top: 27px;
+   }
+   .sign-btn {
+       padding: 10px 20px;
+   }
 }
+
+@media (max-width: 767px) {
+   .project-details{
+       margin: 15px;
+   }
+   body {
+       font-size: 14px;
+   }
+   #hero-slider .caption h1 {
+       font-size: 40px;
+   }
+   #hero-slider .caption {
+       font-size: 15px;
+       padding: 0 30px;
+   }
+   .left-arrow, .right-arrow {
+       font-size: 20px;
+       height: 30px;
+       line-height: 25px;
+       width: 30px;
+   }
+   #hero-slider:hover .right-arrow {
+       right: 15px;
+   }
+   #hero-slider:hover .left-arrow {
+       left: 15px;
+   }
+   .right-arrow i, .left-arrow i {
+       line-height: 30px;
+   }
+   .caption .start-btn {
+       font-size: 12px;
+       padding: 10px 30px;
+   }
+   .navbar-brand {
+       padding: 0 15px 15px;
+   }
+   .navbar-toggle {
+     border:1px solid #fff;
+   }
+
+   .navbar-toggle .icon-bar {
+     background-color: #fff;
+   }
+   .navbar-right li a {
+       font-size: 13px;
+       padding-bottom: 8px;
+       padding-top: 10px;
+   }
+
+   /*services*/
+   section {
+       padding: 45px 0;
+   }
+   .heading {
+       font-size: 14px;
+       padding-bottom: 45px;
+   }
+   .sectionTitle h2 {
+       font-size: 26px;
+   }
+   .ServiceDesc h3 {
+       font-size: 20px;
+   }
+   .ourServices .col-sm-4 {
+       margin-bottom: 32px;
+       padding-bottom: 20px;
+   }
+
+   .ServiceIcon {
+       font-size: 30px;
+       height: 65px;
+       line-height: 62px;
+       width: 65px;
+   }
+   .ourServices .col-sm-4:hover .ServiceIcon:before {
+       height: 90px;
+       width: 90px;
+   }
+   .ourServices {
+       text-align: center;
+       margin-bottom: 50px;
+   }
+   .Members  {
+       margin-bottom: 50px;
+   }
+   .Members  .col-sm-3, 
+   #portfolio .col-sm-3
+    {
+       width: 50%;
+       float: left;
+   }
+   #blog .col-sm-4 {
+       padding:40px;
+   }
+   .social-icons ul li a {
+       font-size: 14px;
+       height: 30px;
+       line-height: 30px;
+       width: 30px;
+   }	
+   .count .col-xs-6 {
+       margin-bottom: 35px;
+   }
+   #features {
+       min-height: 330px;
+   }
+   #features i {
+       font-size: 35px;
+   }
+   #features h3 {
+       font-size: 25px;
+   }
+   .num span {
+       font-size: 10px;
+       margin-top: 15px;
+   }
+   .num {
+       font-size: 18px;
+       line-height: 35px;
+       width: auto;
+   }
+
+   .PricingTable ul {
+       margin-top: 22px;
+   }
+   
+   .PricingTable ul li {
+       font-size: 14px;
+       margin-top: 15px;
+   }
+   .sign-btn{
+       font-size: 12px;
+       margin-top: 25px;
+       padding: 10px 35px;
+   }
+   .PricingTable{
+       margin-bottom: 40px;
+       padding: 20px;
+   }
+   #twitter {
+       padding-bottom: 75px;
+   }
+   .twitterSlider-left, 
+   .twitterSlider-right {
+       top: inherit;
+       bottom: 30px;
+       height: 25px;
+       width: 25px;
+       line-height: 25px;
+       font-size: 14px;
+   }
+   .twitterSlider-left {
+       left: 30px;
+       z-index: 16
+   } 
+   .twitterSlider-right {
+       right: 30px;
+       z-index: 16
+   }
+   .twitterSlider-left i, .twitterSlider-right i{
+       line-height: 24px;
+   }
+   #blog {
+       overflow: hidden;
+   }
+
+   .blogs .col-sm-4 {
+       margin-bottom: 35px;
+   }
+   .moreBlogsbtn {
+       margin-top: 35px;
+   }
+   .btn-loadmore {
+       font-size: 12px;
+       padding: 15px 75px;
+   }
+   #contact .sectionTitle {
+       padding-top: 35px;
+   }
+   .contactinfo {
+       padding-left: 0;
+   }
+   #footer .copyRight {
+       text-align: center;
+   }
+   .copyRight p.prightpos {
+       float: none !important;
+   }
+ h3{
+   font-size:18px;
+}
+}
+
+
+@media (max-width: 479px) {
+ 
+   .Members .col-sm-3, 
+   .PricingTable .col-sm-3, 
+   #portfolio .col-sm-3, 
+   .blogs .col-sm-4 {
+       width:100%;
+       float: none;
+   }
+}
+
     
