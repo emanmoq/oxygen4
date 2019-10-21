@@ -759,7 +759,7 @@ textarea{
   /************** Responsive  *****************************/
   @media(min-width:1200px){
     .MemberImg{
-        height:60%;
+        height:50%;
     }
     .MemberImg img{
     height:90%;
