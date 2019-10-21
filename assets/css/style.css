@@ -757,14 +757,7 @@ textarea{
 }
   /*********************************************************/
   /************** Responsive  *****************************/
-  @media(min-width:1200px){
-    .MemberImg{
-        height:50%;
-    }
-    .MemberImg img{
-    height:90%;
-    }
-  }
+
   @media (min-width: 768px) and (max-width: 991px) {
     .navbar-right li a {
        font-size: 12px;
