@@ -49,18 +49,31 @@ jQuery(function ($) {
 	}
 
 
-	// Progress Bar
-	$('#aboutUs').bind('inview', function (event, visible, visiblePartX, visiblePartY) {
-		if (visible) {
-			$.each($('div.progress-bar'), function () {
-				$(this).css('width', $(this).attr('aria-valuetransitiongoal') + '%');
-			});
-			$(this).unbind('inview');
-		}
-	});
 
 	// Contact form
-	var form = $('#main-contact-form');
+	function onScroll(event){
+			
+		var scrollPosition = $(document).scrollTop();
+		$('.nav-item a[href^="#"').each(function () {
+			console.log($(this).attr('href')); 
+		  var refElement = $($(this).attr("href"));
+		//   console.log($(this).attr("href")); //log
+		  if (refElement.length&&refElement.position().top <= scrollPosition) {
+			$('.nav-item ').removeClass("active");
+			$(this).parent().addClass("active");
+		  }
+		  else{
+			$(this).removeClass("active");
+		  }
+  
+		});
+	  }
+	  $(document).on("scroll", onScroll);
+
+	// Progress Bar
+
+	// Contact form
+	var form = $('.contactForm');
 	form.submit(function (event) {
 		event.preventDefault();
 		var form_status = $('<div class="form_status"></div>');
