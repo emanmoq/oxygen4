@@ -766,7 +766,7 @@ textarea{
  border-radius: 50%;
  right:10%;
  top:-13%;
- border:2px solid rgba(0,0,0,.2)
+ border:2px solid rgba(0,0,0,.2);
 }
 .up a i{
     color:white;
@@ -777,10 +777,22 @@ textarea{
     text-decoration: none;
     
 }
- a:hover i {
-transform:rotate(360deg);
-transition: all .5s;
+.up:hover{
+    transform: scale(1.1);
+    transition: .5s all;;
 }
+ .up:hover i {
+     animation: rotation linear 1s;
+
+ }
+ @keyframes rotation{
+     50%{
+         transform: rotate(180deg);
+     }
+     100%{
+        transform: rotate(0deg);
+     }
+ }
   /*********************************************************/
   /************** Responsive  *****************************/
 
