@@ -86,7 +86,12 @@ jQuery(function ($) {
 			form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
 		});
 	});
-
+	$('.up').each(function(){
+		$(this).click(function(){ 
+			$('html,body').animate({ scrollTop: 0 }, 'slow');
+			return false; 
+		});
+	});
 	//Google Map
 	var latitude = $('#map').data('latitude')
 	var longitude = $('#map').data('longitude')
