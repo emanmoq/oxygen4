@@ -785,6 +785,9 @@ transition: all .5s;
   /************** Responsive  *****************************/
 
   @media (min-width: 768px) and (max-width: 991px) {
+    .rightpos span{
+        float:none;
+    }
     .navbar-right li a {
        font-size: 12px;
        padding-right: 10px;
@@ -807,6 +810,9 @@ transition: all .5s;
 }
 
 @media (max-width: 767px) {
+    .rightpos span{
+        float:none;
+    }
    .project-details{
        margin: 15px;
    }
@@ -1009,6 +1015,9 @@ transition: all .5s;
        width:100%;
        float: none;
    }
+   .rightpos span{
+    float:none;
+}
 }
 
     
