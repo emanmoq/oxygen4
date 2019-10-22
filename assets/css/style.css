@@ -22,16 +22,13 @@ img{
 }
 .carousel-fade .carousel-inner .item{
     background-image:url(../images/slider/1.jpg);
-    opacity: 0;
     transition-property: opacity;
     background-repeat: no-repeat;
     background-size: cover;
     height:2073px;
 
 }
-.carousel-fade .carousel-inner .item.active{
-  opacity: 1;
-}
+
 
 .bgProp{
     background-size: cover;
